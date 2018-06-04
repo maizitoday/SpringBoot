@@ -1,0 +1,4 @@
+logging:
+  file: dev.log
+  level:
+      com.xxx: info

@@ -1,0 +1,4 @@
+logging:
+  file: test.log
+  level:
+      com.xxx: info
