@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.slave.SysDao">
+    <resultMap id="BaseResultMap" type="com.example.demo.pojo.Sys" >
+        <result column="variable" property="variable" jdbcType="VARCHAR" />
+        <result column="value" property="value" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="findSysAll" resultMap="BaseResultMap">
+        select * from sys_config;
+    </select>
+
+</mapper>
