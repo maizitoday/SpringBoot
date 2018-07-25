@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/@async异步注解" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Aspects" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapStruct转换" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring常用注解" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ehCahe缓存" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jdbcTemplate学习" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logback日志" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis使用" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis配置多个数据源" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scheduled定时任务开启" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-starter-swagger-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/启动过程" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/拦截器" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/整合Swagger2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/文件上传" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/监听器" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/过滤器" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/错误统一处理" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/静态资源访问" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

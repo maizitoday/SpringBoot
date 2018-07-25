@@ -27,6 +27,7 @@ public class LoginService {
     @Autowired
     private SysDao sysDao;
 
+
     public List<User> findUserAll(){
         return userDao.findUserAll();
     }

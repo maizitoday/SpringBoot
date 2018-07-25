@@ -17,4 +17,6 @@ import com.example.demo.pojo.Sys;
 @Repository
 public interface SysDao {
     List<Sys> findSysAll();
+
+    void updateAll();
 }

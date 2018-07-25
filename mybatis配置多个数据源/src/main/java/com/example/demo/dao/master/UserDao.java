@@ -18,4 +18,7 @@ import com.example.demo.pojo.User;
 public interface UserDao {
 
    List<User> findUserAll();
+
+   void updateAll();
+
 }
