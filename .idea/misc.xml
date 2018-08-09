@@ -10,6 +10,10 @@
     <option name="pathToConfigFileJava" value="$USER_HOME$/工具/mec-formatter.xml" />
     <option name="selectedJavaProfile" value="mec-formatter" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/SmartFramerk_Core" />
+    <file type="web" url="file://$PROJECT_DIR$/SmartFramerk_Use" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -31,6 +35,8 @@
         <option value="$PROJECT_DIR$/@async异步注解/pom.xml" />
         <option value="$PROJECT_DIR$/MapStruct转换/pom.xml" />
         <option value="$PROJECT_DIR$/整合Swagger2/pom.xml" />
+        <option value="$PROJECT_DIR$/SmartFramerk_Use/pom.xml" />
+        <option value="$PROJECT_DIR$/SmartFramerk_Core/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SmartFramerk_Core:war">
+    <output-path>$PROJECT_DIR$/SmartFramerk_Core/target</output-path>
+    <root id="archive" name="smartCore-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SmartFramerk_Core:war exploded" />
+    </root>
+  </artifact>
+</component>

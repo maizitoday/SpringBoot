@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import java.sql.SQLException;
+import java.util.Properties;
 
 import javax.sql.DataSource;
 
@@ -10,14 +11,12 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jta.atomikos.AtomikosDataSourceBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.env.Environment;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-
-import com.alibaba.druid.pool.DruidDataSource;
-import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 
 /**
  * @author yubo
@@ -37,10 +36,17 @@ public class DataSourceMasterConfig {
     @ConfigurationProperties(prefix = "spring.datasource.master")
     @Bean(name = "masterDataSource")
     @Primary
-    public DataSource masterDataSource() throws SQLException {
+    public DataSource masterDataSource(Environment env) throws SQLException {
         // 这里设置了 Druid创建数据源
-        DruidDataSource druidDataSource = DruidDataSourceBuilder.create().build();
-        return druidDataSource;
+//        DruidDataSource xaDataSource = DruidDataSourceBuilder.create().build();
+
+          AtomikosDataSourceBean xaDataSource = new AtomikosDataSourceBean();
+          xaDataSource.setUniqueResourceName("masterDataSource");
+          xaDataSource.setXaDataSourceClassName("com.alibaba.druid.pool.xa.DruidXADataSource");
+          xaDataSource.setPoolSize(5);
+          Properties prop = ProUtil.build(env, "spring.datasource.master.");
+          xaDataSource.setXaProperties(prop);
+          return xaDataSource;
     }
 
     /***
@@ -59,15 +65,15 @@ public class DataSourceMasterConfig {
     }
 
     /***
-     * 配置事物
+     * 配置事物 :  如果用JTA来处理事物的话，是不需要写事物的
      * @param dataSource
      * @return
      */
-    @Bean(name = "masterTransactionManager")
-    @Primary
-    public DataSourceTransactionManager masterTransactionManager(@Qualifier("masterDataSource") DataSource dataSource) {
-        return new DataSourceTransactionManager(dataSource);
-    }
+//    @Bean(name = "masterTransactionManager")
+//    @Primary
+//    public DataSourceTransactionManager masterTransactionManager(@Qualifier("masterDataSource") DataSource dataSource) {
+//        return new DataSourceTransactionManager(dataSource);
+//    }
 
     /***
      * 配置数据库操作模板
@@ -80,5 +86,4 @@ public class DataSourceMasterConfig {
     public SqlSessionTemplate masterSqlSessionTemplate(@Qualifier("masterSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
-
 }

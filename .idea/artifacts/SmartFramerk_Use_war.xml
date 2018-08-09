@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SmartFramerk_Use:war">
+    <output-path>$PROJECT_DIR$/SmartFramerk_Use/target</output-path>
+    <root id="archive" name="smartshow.war">
+      <element id="artifact" artifact-name="SmartFramerk_Use:war exploded" />
+    </root>
+  </artifact>
+</component>

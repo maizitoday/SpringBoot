@@ -24,7 +24,9 @@ public class TransactionManagerService {
     @Autowired
     private SysDao sysDao;
 
-    @Transactional(value = "masterTransactionManager",rollbackFor = Exception.class)
+//  @Transactional(value = "masterTransactionManager",rollbackFor = Exception.class)
+
+    @Transactional(rollbackFor = Exception.class)
     public void  updateData(){
         userDao.updateAll();
         sysDao.updateAll();

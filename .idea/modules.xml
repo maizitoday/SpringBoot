@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/@async异步注解/@async异步注解.iml" filepath="$PROJECT_DIR$/@async异步注解/@async异步注解.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aspects/Aspects.iml" filepath="$PROJECT_DIR$/Aspects/Aspects.iml" />
       <module fileurl="file://$PROJECT_DIR$/MapStruct转换/MapStruct转换.iml" filepath="$PROJECT_DIR$/MapStruct转换/MapStruct转换.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartFramerk_Core/SmartFramerk_Core.iml" filepath="$PROJECT_DIR$/SmartFramerk_Core/SmartFramerk_Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartFramerk_Use/SmartFramerk_Use.iml" filepath="$PROJECT_DIR$/SmartFramerk_Use/SmartFramerk_Use.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring常用注解/Spring常用注解.iml" filepath="$PROJECT_DIR$/Spring常用注解/Spring常用注解.iml" />
       <module fileurl="file://$PROJECT_DIR$/ehCahe缓存/ehCahe缓存.iml" filepath="$PROJECT_DIR$/ehCahe缓存/ehCahe缓存.iml" />
       <module fileurl="file://$PROJECT_DIR$/gitTest/gitTest.iml" filepath="$PROJECT_DIR$/gitTest/gitTest.iml" />
