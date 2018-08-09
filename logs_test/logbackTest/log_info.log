@@ -1,0 +1,10 @@
+===2018-06-04 15:05:03.873 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 8731 (started by maizi in /github/SpringBoot)
+===2018-06-04 15:05:03.879 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: test
+===2018-06-04 15:05:07.904 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-04 15:05:07.920 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-04 15:05:07.922 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-04 15:05:07.948 INFO  org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/maizi/Documents/Oracle/instantclient_11_2:/Users/maizi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+===2018-06-04 15:05:08.209 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-04 15:05:09.903 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-04 15:05:09.928 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-04 15:05:09.953 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 7.782 seconds (JVM running for 10.348)

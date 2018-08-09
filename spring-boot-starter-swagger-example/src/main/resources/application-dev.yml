@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    include:
+      - api               # 开发环境启用api文档
+  swagger:
+    enabled: true
+    

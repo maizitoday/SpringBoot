@@ -1,0 +1,19 @@
+===2018-06-04 15:06:23.165 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 8731 (started by maizi in /github/SpringBoot)
+===2018-06-04 15:06:23.166 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: dev
+===2018-06-04 15:06:23.928 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-04 15:06:23.929 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-04 15:06:23.931 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-04 15:06:23.951 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-04 15:06:24.298 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-04 15:06:24.299 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-04 15:06:24.304 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 1.264 seconds (JVM running for 84.697)
+===2018-06-04 15:07:21.721 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 8840 (started by maizi in /github/SpringBoot)
+===2018-06-04 15:07:21.761 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: dev
+===2018-06-04 15:07:26.143 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-04 15:07:26.291 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-04 15:07:26.293 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-04 15:07:26.527 INFO  org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/maizi/Documents/Oracle/instantclient_11_2:/Users/maizi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+===2018-06-04 15:07:27.157 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-04 15:07:29.824 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-04 15:07:29.846 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-04 15:07:29.913 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 9.956 seconds (JVM running for 13.382)

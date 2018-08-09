@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    include:
+      - api               # 生产环境不启用api文档
+  swagger:
+    enabled: false

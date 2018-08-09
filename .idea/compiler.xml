@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="@async异步注解" />
+        <module name="Aspects" />
+        <module name="ehCahe缓存" />
+        <module name="jdbcTemplate学习" />
+        <module name="logback日志" />
+        <module name="MapStruct转换" />
+        <module name="mybatis使用" />
+        <module name="mybatis配置多个数据源" />
+        <module name="scheduled定时任务开启" />
+        <module name="SmartFramerk_Core" />
+        <module name="SmartFramerk_Use" />
+        <module name="Spring常用注解" />
+        <module name="启动过程" />
+        <module name="拦截器" />
+        <module name="整合Swagger2" />
+        <module name="文件上传" />
+        <module name="监听器" />
+        <module name="过滤器" />
+        <module name="错误统一处理" />
+        <module name="静态资源访问" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="@async异步注解" target="1.8" />
+      <module name="Aspects" target="1.8" />
+      <module name="ehCahe缓存" target="1.8" />
+      <module name="jdbcTemplate学习" target="1.8" />
+      <module name="logback日志" target="1.8" />
+      <module name="MapStruct转换" target="1.8" />
+      <module name="mybatis使用" target="1.8" />
+      <module name="mybatis配置多个数据源" target="1.8" />
+      <module name="scheduled定时任务开启" target="1.8" />
+      <module name="SmartFramerk_Core" target="1.7" />
+      <module name="SmartFramerk_Use" target="1.7" />
+      <module name="spring-boot-starter-swagger-example" target="1.7" />
+      <module name="Spring常用注解" target="1.8" />
+      <module name="启动过程" target="1.8" />
+      <module name="拦截器" target="1.8" />
+      <module name="整合Swagger2" target="1.8" />
+      <module name="文件上传" target="1.8" />
+      <module name="监听器" target="1.8" />
+      <module name="过滤器" target="1.8" />
+      <module name="错误统一处理" target="1.8" />
+      <module name="静态资源访问" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,195 @@
+===2018-06-17 00:15:04.349 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 9680 (started by maizi in /github/SpringBoot)
+===2018-06-17 00:15:04.351 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: dev
+===2018-06-17 00:15:04.355 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e10cf75: startup date [Sun Jun 17 00:15:04 CST 2018]; root of context hierarchy
+===2018-06-17 00:15:06.013 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:91  - Tomcat initialized with port(s): 8080 (http)
+===2018-06-17 00:15:06.021 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:15:06.026 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-17 00:15:06.027 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-17 00:15:06.060 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-17 00:15:06.062 INFO  org.springframework.web.context.ContextLoader Line:285 - Root WebApplicationContext: initialization completed in 1707 ms
+===2018-06-17 00:15:06.118 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet dispatcherServlet mapped to [/]
+===2018-06-17 00:15:06.124 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet statViewServlet mapped to [/druid/*]
+===2018-06-17 00:15:06.125 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet com.example.demo.DruidStatViewServlet mapped to [/druid/*]
+===2018-06-17 00:15:06.126 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+===2018-06-17 00:15:06.126 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+===2018-06-17 00:15:06.126 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+===2018-06-17 00:15:06.126 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'requestContextFilter' to: [/*]
+===2018-06-17 00:15:06.126 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+===2018-06-17 00:15:06.127 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'DruidStatFilter' to urls: [/*]
+===2018-06-17 00:15:06.261 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:15:06.412 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e10cf75: startup date [Sun Jun 17 00:15:04 CST 2018]; root of context hierarchy
+===2018-06-17 00:15:06.428 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/login]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.login()
+===2018-06-17 00:15:06.429 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/annotationLogin]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.annotationLogin()
+===2018-06-17 00:15:06.432 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+===2018-06-17 00:15:06.433 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+===2018-06-17 00:15:06.453 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:15:06.453 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:15:06.525 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+===2018-06-17 00:15:06.646 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:433 - Registering beans for JMX exposure on startup
+===2018-06-17 00:15:06.647 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+===2018-06-17 00:15:06.691 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+===2018-06-17 00:15:06.714 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:15:06.715 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-17 00:15:06.718 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:206 - Tomcat started on port(s): 8080 (http) with context path ''
+===2018-06-17 00:15:06.720 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 2.439 seconds (JVM running for 242.302)
+===2018-06-17 00:15:06.724 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Line:56  - Condition evaluation unchanged
+===2018-06-17 00:15:21.032 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e10cf75: startup date [Sun Jun 17 00:15:04 CST 2018]; root of context hierarchy
+===2018-06-17 00:15:21.038 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:451 - Unregistering JMX-exposed beans on shutdown
+===2018-06-17 00:15:21.039 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:183 - Unregistering JMX-exposed beans
+===2018-06-17 00:15:52.344 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 9680 (started by maizi in /github/SpringBoot)
+===2018-06-17 00:15:52.345 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: dev
+===2018-06-17 00:15:52.350 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43793da0: startup date [Sun Jun 17 00:15:52 CST 2018]; root of context hierarchy
+===2018-06-17 00:15:53.826 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:91  - Tomcat initialized with port(s): 8080 (http)
+===2018-06-17 00:15:53.828 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:15:53.829 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-17 00:15:53.829 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-17 00:15:53.850 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-17 00:15:53.852 INFO  org.springframework.web.context.ContextLoader Line:285 - Root WebApplicationContext: initialization completed in 1503 ms
+===2018-06-17 00:15:53.927 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet dispatcherServlet mapped to [/]
+===2018-06-17 00:15:53.929 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet statViewServlet mapped to [/druid/*]
+===2018-06-17 00:15:53.929 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet com.example.demo.DruidStatViewServlet mapped to [/druid/*]
+===2018-06-17 00:15:53.930 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+===2018-06-17 00:15:53.930 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+===2018-06-17 00:15:53.930 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+===2018-06-17 00:15:53.931 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'requestContextFilter' to: [/*]
+===2018-06-17 00:15:53.931 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+===2018-06-17 00:15:53.931 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'DruidStatFilter' to urls: [/*]
+===2018-06-17 00:15:54.176 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:15:54.374 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43793da0: startup date [Sun Jun 17 00:15:52 CST 2018]; root of context hierarchy
+===2018-06-17 00:15:54.395 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/login]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.login()
+===2018-06-17 00:15:54.398 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/annotationLogin]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.annotationLogin()
+===2018-06-17 00:15:54.401 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+===2018-06-17 00:15:54.402 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+===2018-06-17 00:15:54.425 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:15:54.426 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:15:54.522 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+===2018-06-17 00:15:54.562 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:433 - Registering beans for JMX exposure on startup
+===2018-06-17 00:15:54.563 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+===2018-06-17 00:15:54.574 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+===2018-06-17 00:15:54.585 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:15:54.585 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-17 00:15:54.589 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:206 - Tomcat started on port(s): 8080 (http) with context path ''
+===2018-06-17 00:15:54.590 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 2.375 seconds (JVM running for 290.169)
+===2018-06-17 00:15:54.594 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Line:56  - Condition evaluation unchanged
+===2018-06-17 00:15:57.963 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43793da0: startup date [Sun Jun 17 00:15:52 CST 2018]; root of context hierarchy
+===2018-06-17 00:15:57.969 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:451 - Unregistering JMX-exposed beans on shutdown
+===2018-06-17 00:15:57.971 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:183 - Unregistering JMX-exposed beans
+===2018-06-17 00:15:58.556 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 9680 (started by maizi in /github/SpringBoot)
+===2018-06-17 00:15:58.557 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: dev
+===2018-06-17 00:15:58.653 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1131bc8: startup date [Sun Jun 17 00:15:58 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:00.289 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:91  - Tomcat initialized with port(s): 8080 (http)
+===2018-06-17 00:16:00.316 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:16:00.326 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-17 00:16:00.330 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-17 00:16:00.349 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-17 00:16:00.353 INFO  org.springframework.web.context.ContextLoader Line:285 - Root WebApplicationContext: initialization completed in 1699 ms
+===2018-06-17 00:16:00.540 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet dispatcherServlet mapped to [/]
+===2018-06-17 00:16:00.541 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet statViewServlet mapped to [/druid/*]
+===2018-06-17 00:16:00.543 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet com.example.demo.DruidStatViewServlet mapped to [/druid/*]
+===2018-06-17 00:16:00.544 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+===2018-06-17 00:16:00.554 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+===2018-06-17 00:16:00.578 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+===2018-06-17 00:16:00.578 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'requestContextFilter' to: [/*]
+===2018-06-17 00:16:00.579 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+===2018-06-17 00:16:00.580 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'DruidStatFilter' to urls: [/*]
+===2018-06-17 00:16:00.998 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:01.286 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1131bc8: startup date [Sun Jun 17 00:15:58 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:01.369 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/login]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.login()
+===2018-06-17 00:16:01.378 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/annotationLogin]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.annotationLogin()
+===2018-06-17 00:16:01.420 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+===2018-06-17 00:16:01.422 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+===2018-06-17 00:16:01.441 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:01.441 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:01.750 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+===2018-06-17 00:16:01.863 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:433 - Registering beans for JMX exposure on startup
+===2018-06-17 00:16:01.866 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+===2018-06-17 00:16:01.879 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+===2018-06-17 00:16:01.917 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:16:01.921 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-17 00:16:01.939 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:206 - Tomcat started on port(s): 8080 (http) with context path ''
+===2018-06-17 00:16:01.944 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 3.48 seconds (JVM running for 297.524)
+===2018-06-17 00:16:01.957 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Line:56  - Condition evaluation unchanged
+===2018-06-17 00:16:07.192 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1131bc8: startup date [Sun Jun 17 00:15:58 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:07.197 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:451 - Unregistering JMX-exposed beans on shutdown
+===2018-06-17 00:16:07.199 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:183 - Unregistering JMX-exposed beans
+===2018-06-17 00:16:07.669 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 9680 (started by maizi in /github/SpringBoot)
+===2018-06-17 00:16:07.669 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: dev
+===2018-06-17 00:16:07.674 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c19c4e5: startup date [Sun Jun 17 00:16:07 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:08.294 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:91  - Tomcat initialized with port(s): 8080 (http)
+===2018-06-17 00:16:08.295 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:16:08.296 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-17 00:16:08.296 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-17 00:16:08.304 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-17 00:16:08.305 INFO  org.springframework.web.context.ContextLoader Line:285 - Root WebApplicationContext: initialization completed in 631 ms
+===2018-06-17 00:16:08.360 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet dispatcherServlet mapped to [/]
+===2018-06-17 00:16:08.361 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet statViewServlet mapped to [/druid/*]
+===2018-06-17 00:16:08.362 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet com.example.demo.DruidStatViewServlet mapped to [/druid/*]
+===2018-06-17 00:16:08.362 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+===2018-06-17 00:16:08.363 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+===2018-06-17 00:16:08.363 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+===2018-06-17 00:16:08.363 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'requestContextFilter' to: [/*]
+===2018-06-17 00:16:08.363 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+===2018-06-17 00:16:08.364 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'DruidStatFilter' to urls: [/*]
+===2018-06-17 00:16:08.461 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:08.578 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c19c4e5: startup date [Sun Jun 17 00:16:07 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:08.613 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/login]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.login()
+===2018-06-17 00:16:08.615 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/annotationLogin]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.annotationLogin()
+===2018-06-17 00:16:08.624 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+===2018-06-17 00:16:08.628 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+===2018-06-17 00:16:08.645 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:08.645 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:08.714 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+===2018-06-17 00:16:08.736 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:433 - Registering beans for JMX exposure on startup
+===2018-06-17 00:16:08.738 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+===2018-06-17 00:16:08.741 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+===2018-06-17 00:16:08.747 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:16:08.747 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-17 00:16:08.749 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:206 - Tomcat started on port(s): 8080 (http) with context path ''
+===2018-06-17 00:16:08.751 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 1.124 seconds (JVM running for 304.33)
+===2018-06-17 00:16:08.753 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Line:56  - Condition evaluation unchanged
+===2018-06-17 00:16:08.838 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+===2018-06-17 00:16:08.838 INFO  org.springframework.web.servlet.DispatcherServlet Line:494 - FrameworkServlet 'dispatcherServlet': initialization started
+===2018-06-17 00:16:08.841 INFO  org.springframework.web.servlet.DispatcherServlet Line:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+===2018-06-17 00:16:08.849 INFO  com.alibaba.druid.pool.DruidDataSource Line:106 - {dataSource-2} inited
+===2018-06-17 00:16:29.252 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c19c4e5: startup date [Sun Jun 17 00:16:07 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:29.254 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:451 - Unregistering JMX-exposed beans on shutdown
+===2018-06-17 00:16:29.254 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:183 - Unregistering JMX-exposed beans
+===2018-06-17 00:16:29.255 INFO  com.alibaba.druid.pool.DruidDataSource Line:106 - {dataSource-2} closed
+===2018-06-17 00:16:29.612 INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on localhost with PID 9680 (started by maizi in /github/SpringBoot)
+===2018-06-17 00:16:29.612 INFO  com.example.demo.DemoApplication Line:663 - The following profiles are active: dev
+===2018-06-17 00:16:29.615 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@430d9cdd: startup date [Sun Jun 17 00:16:29 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:30.196 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:91  - Tomcat initialized with port(s): 8080 (http)
+===2018-06-17 00:16:30.198 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Initializing ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:16:30.200 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+===2018-06-17 00:16:30.204 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.31
+===2018-06-17 00:16:30.247 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+===2018-06-17 00:16:30.248 INFO  org.springframework.web.context.ContextLoader Line:285 - Root WebApplicationContext: initialization completed in 633 ms
+===2018-06-17 00:16:30.381 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet dispatcherServlet mapped to [/]
+===2018-06-17 00:16:30.383 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet statViewServlet mapped to [/druid/*]
+===2018-06-17 00:16:30.385 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:186 - Servlet com.example.demo.DruidStatViewServlet mapped to [/druid/*]
+===2018-06-17 00:16:30.386 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+===2018-06-17 00:16:30.387 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+===2018-06-17 00:16:30.388 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+===2018-06-17 00:16:30.389 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'requestContextFilter' to: [/*]
+===2018-06-17 00:16:30.390 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+===2018-06-17 00:16:30.390 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'DruidStatFilter' to urls: [/*]
+===2018-06-17 00:16:30.696 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:30.846 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@430d9cdd: startup date [Sun Jun 17 00:16:29 CST 2018]; root of context hierarchy
+===2018-06-17 00:16:30.889 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/login]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.login()
+===2018-06-17 00:16:30.892 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/annotationLogin]}" onto public java.util.List<com.example.demo.pojo.Login> com.example.demo.LoginController.annotationLogin()
+===2018-06-17 00:16:30.901 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+===2018-06-17 00:16:30.903 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+===2018-06-17 00:16:30.970 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:30.971 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+===2018-06-17 00:16:31.145 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+===2018-06-17 00:16:31.218 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:433 - Registering beans for JMX exposure on startup
+===2018-06-17 00:16:31.223 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+===2018-06-17 00:16:31.250 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+===2018-06-17 00:16:31.288 INFO  org.apache.coyote.http11.Http11NioProtocol Line:180 - Starting ProtocolHandler ["http-nio-8080"]
+===2018-06-17 00:16:31.290 INFO  org.apache.tomcat.util.net.NioSelectorPool Line:180 - Using a shared selector for servlet write/read
+===2018-06-17 00:16:31.297 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:206 - Tomcat started on port(s): 8080 (http) with context path ''
+===2018-06-17 00:16:31.307 INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 1.752 seconds (JVM running for 326.885)
+===2018-06-17 00:16:31.313 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Line:56  - Condition evaluation unchanged
+===2018-06-17 00:17:26.997 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@430d9cdd: startup date [Sun Jun 17 00:16:29 CST 2018]; root of context hierarchy
+===2018-06-17 00:17:27.005 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:451 - Unregistering JMX-exposed beans on shutdown
+===2018-06-17 00:17:27.006 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:183 - Unregistering JMX-exposed beans

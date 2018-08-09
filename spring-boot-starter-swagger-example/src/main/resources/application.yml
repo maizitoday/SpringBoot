@@ -1,0 +1,16 @@
+logging:
+  level:
+    root: info
+    com.reger: DEBUG
+    com.fasterxml: warn 
+    org.springframework: warn
+    springfox.documentation: info
+    org.springframework.boot.context.embedded.tomcat: INFO
+    
+server:
+  port: 82
+  
+spring:
+  profiles:
+    active:
+      - prod
