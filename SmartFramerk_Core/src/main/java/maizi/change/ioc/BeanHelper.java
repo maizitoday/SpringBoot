@@ -20,6 +20,7 @@ public final class BeanHelper {
     private static final Map<Class<?>,Object> BEAN_MAP = new HashMap<Class<?>, Object>();
 
     static {
+        System.out.println("  BeanHelper  执行  ");
         Set<Class<?>> beanClassSet = ClassHelper.getBeanClassSet();
         for (Class<?> beanClass : beanClassSet)
         {

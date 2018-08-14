@@ -21,6 +21,7 @@ public final class ControllerHelper {
     private static final Map<Request,Handler> ACTION_MAP = new HashMap<Request,Handler>();
 
     static {
+        System.out.println("  ControllerHelper  执行  ");
         Set<Class<?>> controllerClassSet = ClassHelper.getControllerClassSet();
         if (controllerClassSet != null)
         {

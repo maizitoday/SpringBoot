@@ -14,6 +14,7 @@ import java.util.Map;
 public final class IocHelper {
 
     static {
+        System.out.println("  IocHelper  执行  ");
         // 获取所有的Bean类与Bean实例之间的映射关系
         Map<Class<?>,Object> beanMap = BeanHelper.getBeanMap();
        if (beanMap != null)

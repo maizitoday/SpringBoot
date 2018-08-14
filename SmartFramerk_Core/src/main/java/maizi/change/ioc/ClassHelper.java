@@ -19,6 +19,7 @@ public  final class ClassHelper {
     private static Set<Class<?>> CLASS_SET = new HashSet<Class<?>>();
 
     static {
+        System.out.println("  ClassHelper  执行  ");
         String basePackage = ConfigHelper.getAppBasePackage();
         CLASS_SET = ClassUtil.getClassSet(basePackage);
     }

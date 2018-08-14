@@ -27,6 +27,8 @@ import maizi.change.ioc.ControllerHelper;
 import maizi.change.ioc.Handler;
 import maizi.change.ioc.HelperLoader;
 import maizi.change.ioc.ReflectionUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -41,9 +43,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @WebServlet(urlPatterns = "/*",loadOnStartup = 0)
 public class DispatcherServlet extends HttpServlet{
 
+    private static final Logger logger = LoggerFactory.getLogger(DispatcherServlet.class);
+
     @Override
     public void init(ServletConfig config) throws ServletException {
-        super.init(config);
+        logger.info("init");
         HelperLoader.init();
         ServletContext servletContext = config.getServletContext();
         //注册处理JSP的servlet
@@ -58,7 +62,7 @@ public class DispatcherServlet extends HttpServlet{
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.service(req, resp);
+        logger.info("service");
         // 获取请求方法和请求路径
         String requestMethod = req.getMethod().toLowerCase();
         String requestPath = req.getPathInfo();
@@ -74,11 +78,12 @@ public class DispatcherServlet extends HttpServlet{
             //创建请求参数对象
             Map<String,Object> paramMap = new HashMap<String, Object>();
             Enumeration<String> paramNames = req.getParameterNames();
+
             while (paramNames.hasMoreElements())
             {
                 String paramName = paramNames.nextElement();
                 String paramValue = req.getParameter(paramName);
-                paramMap.put(paramName,paramValue);
+                paramMap.put(paramName, paramValue);
             }
             String body = decodeURL(getString(req.getInputStream()));
             if (body != null)
@@ -93,17 +98,28 @@ public class DispatcherServlet extends HttpServlet{
                         {
                             String paramName = array[0];
                             String paramValue = array[1];
-                            paramMap.put(paramName,paramValue);
+                            paramMap.put(paramName, paramValue);
                         }
                     }
                 }
             }
-
-            //请求参数对象
-            Param param = new Param(paramMap);
             //调用Action方法
             Method  actionMethod = handler.getActionMethod();
-            Object result = ReflectionUtil.invokeMethod(controllerBean,actionMethod,param);
+            Object result = null;
+            if (paramMap != null)
+            {
+                Object[]  objs = new Object[paramMap.size()];
+                int count = 0;
+                for (Object obj : paramMap.keySet())
+                {
+                    objs[count] = paramMap.get(obj);
+                    count++;
+                }
+                result = ReflectionUtil.invokeMethod(controllerBean,actionMethod,objs);
+            }else{
+                result = ReflectionUtil.invokeMethod(controllerBean,actionMethod);
+            }
+
             if (result instanceof View)
             {
                 View view = (View)result;
