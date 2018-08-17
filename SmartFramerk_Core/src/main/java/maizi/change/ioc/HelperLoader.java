@@ -1,5 +1,7 @@
 package maizi.change.ioc;
 
+import maizi.change.aop.AopHelper;
+
 /**
  * @author yubo
  * @version V2.0
@@ -12,7 +14,13 @@ public class HelperLoader {
 
     public static void init()
     {
-        Class<?>[] classList = {ClassHelper.class,BeanHelper.class,IocHelper.class,ControllerHelper.class};
+        Class<?>[] classList = {
+                                ClassHelper.class,
+                                BeanHelper.class,
+                                AopHelper.class,
+                                IocHelper.class,
+                                ControllerHelper.class
+                               };
         for (Class<?> cls : classList)
         {
             ClassUtil.loadClass(cls.getName(),true);
