@@ -8,6 +8,9 @@ import java.util.Map;
 import java.util.Set;
 import maizi.change.ioc.BeanHelper;
 import maizi.change.ioc.ClassHelper;
+import maizi.change.ioc.Service;
+import maizi.change.transaction.TransactionProxy;
+
 /**
  * @author yubo
  * @version V2.0
@@ -50,14 +53,24 @@ public class AopHelper {
 		return targetClassSet;
 	}
 
+	private static Map<Class<?>,Set<Class<?>>> createProxyMap() throws Exception
+	{
+		Map<Class<?>,Set<Class<?>>> proxyMap = new HashMap<Class<?>,Set<Class<?>>>();
+	    addAspectProxy(proxyMap);
+	    addTransactionProxy(proxyMap);
+        return proxyMap;
+	}
+
+
+
 	/***
 	 * 代理类和目标类之间的映射关系
 	 * 
 	 * @return
 	 * @throws Exception
 	 */
-	private static Map<Class<?>, Set<Class<?>>> createProxyMap() throws Exception {
-		Map<Class<?>, Set<Class<?>>> proxyMap = new HashMap<Class<?>, Set<Class<?>>>();
+	private static Map<Class<?>, Set<Class<?>>> addAspectProxy(Map<Class<?>, Set<Class<?>>> proxyMap) throws Exception {
+//		Map<Class<?>, Set<Class<?>>> proxyMap = new HashMap<Class<?>, Set<Class<?>>>();
 		// 获取所有切面代理类
 		Set<Class<?>> proxyClassSet = ClassHelper.getClassSetBySuper(AspectProxy.class);
 		for (Class<?> proxyClass : proxyClassSet) {
@@ -71,6 +84,27 @@ public class AopHelper {
 		}
 		return proxyMap;
 	}
+
+
+	private static void addTransactionProxy(Map<Class<?>,Set<Class<?>>> proxyMap)
+	{
+		Set<Class<?>> serviceClassSet = ClassHelper.getClassSetByAnnotation(Service.class);
+        proxyMap.put(TransactionProxy.class,serviceClassSet);
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/***
 	 * 一个Controller或者类，一共有多少代理
