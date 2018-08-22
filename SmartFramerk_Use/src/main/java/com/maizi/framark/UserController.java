@@ -24,8 +24,8 @@ public class UserController {
         return userService.login(userName,passWord);
     }
 
-    @Action("get:/test")
-    public Data test(){
-        return userService.login("1","2");
+    @Action("get:/tran")
+    public void transaction(){
+        userService.addSlave();
     }
 }
